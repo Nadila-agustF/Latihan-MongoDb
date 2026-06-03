@@ -53,7 +53,7 @@ Mempelajari cara menambahkan data ke dalam collection.
 **File:**
 
 ```text
-02_insert_data.js
+insert_data.js
 ```
 
 ---
@@ -66,10 +66,8 @@ Mempelajari cara membaca dan memfilter data.
 
 - find()
 - findOne()
-- Projection
 - Sorting
 - Limit
-- Filtering
 
 **File:**
 
@@ -88,7 +86,6 @@ Mempelajari cara memperbarui data yang sudah ada.
 - updateOne()
 - updateMany()
 - $set
-- $unset
 
 **File:**
 
@@ -124,7 +121,6 @@ Mempelajari teknik analisis data menggunakan Aggregation Framework.
 - $group
 - $sum
 - $sort
-- Analisis data berdasarkan kategori
 
 **File:**
 
@@ -134,24 +130,7 @@ aggregation.js
 
 ---
 
-### 7. Indexing
-
-Mempelajari cara meningkatkan performa query menggunakan index.
-
-**Materi:**
-
-- createIndex()
-- getIndexes()
-
-**File:**
-
-```text
-indexing.js
-```
-
----
-
-### 8. Exercise
+### 7. Exercise
 
 Berisi latihan mandiri untuk menguji pemahaman peserta terhadap materi yang telah dipelajari.
 
@@ -198,7 +177,7 @@ Nama collection harus sesuai dengan dataset dan script yang digunakan agar selur
 Jika menggunakan file `customers.json`, import data terlebih dahulu menggunakan:
 
 ```bash
-mongoimport --db northwind --collection customers --file customers.json --jsonArray
+mongoimport --db bootcampDE --collection customers --file customers.json --jsonArray
 ```
 
 ### 6. Jalankan Script
@@ -211,13 +190,12 @@ Jalankan setiap file secara bertahap sesuai urutan materi:
 4. update_data.js
 5. delete_data.js
 6. aggregation.js
-7. indexing.js
-8. exercise.js
+7. exercise.js
 
 Script dapat dijalankan melalui:
 
 - MongoDB Shell (mongosh)
-- MongoDB Compass Playground
+- MongoDB Compass
 
 ---
 
@@ -230,14 +208,13 @@ mongodb-customers-practice/
 │   └── customers.json
 │
 ├── scripts/
-│   ├── 01_database_collection.js
-│   ├── 02_insert_data.js
-│   ├── 03_read_query.js
-│   ├── 04_update_data.js
-│   ├── 05_delete_data.js
-│   ├── 06_aggregation.js
-│   ├── 07_indexing.js
-│   └── 08_exercise.js
+│   ├── database_collection.js
+│   ├── insert_data.js
+│   ├── read_query.js
+│   ├── update_data.js
+│   ├── delete_data.js
+│   ├── aggregation.js
+│   ├── exercise.js
 │
 └── README.md
 ```
